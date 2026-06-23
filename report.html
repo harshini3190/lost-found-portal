@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Item</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">
+<i class="fas fa-search"></i>
+Lost & Found Portal
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="browse.html">Browse Items</a></li>
+<li><a href="report.html">Report Item</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+</ul>
+</nav>
+
+<section class="report-container">
+
+<div class="report-card">
+
+<h1>Report an Item</h1>
+
+<form id="reportForm">
+
+<input type="text"
+id="itemName"
+placeholder="Item Name"
+required>
+
+<select id="itemType" required>
+<option value="">Select Type</option>
+<option value="Lost">Lost Item</option>
+<option value="Found">Found Item</option>
+</select>
+
+<input type="text"
+id="location"
+placeholder="Location"
+required>
+
+<input type="date"
+id="date"
+required>
+
+<input type="text"
+id="contact"
+placeholder="Contact Number"
+required>
+
+<textarea
+id="description"
+placeholder="Item Description"
+rows="5"></textarea>
+
+<input type="file"
+id="image">
+
+<button type="submit">
+Submit Report
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
